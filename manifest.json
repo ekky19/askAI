@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "ask AI",
+  "version": "1.0",
+  "description": "Select text, then get an AI-powered explanation using OpenAI, Gemini, Mistral, Cohere, OpenRouter, or Hugging Face.",
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "askAI.png",
+    "48": "askAI.png",
+    "128": "askAI.png"
+  }
+}

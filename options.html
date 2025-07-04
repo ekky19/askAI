@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>askAI Settings</title>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: Arial, sans-serif; background: #f7fafd; margin:0; }
+    .container {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 6px 32px rgba(0,0,0,0.09);
+      padding: 36px 32px 28px 32px;
+      max-width: 400px;
+      margin: 40px auto;
+      text-align: center;
+    }
+    label { display:block; margin-top: 14px; font-weight:500; text-align:left;}
+    .apilink {
+      color:#369aff; font-weight:500; font-size:1em; text-decoration:underline; cursor:pointer;
+    }
+    input[type="password"], input[type="text"], select {
+      width: 100%; padding: 10px; font-size: 1em; border-radius: 9px;
+      border: 1px solid #c2d1f6; background: #f4f7fe; margin-top:5px;
+    }
+    button { margin-top:18px; width:100%; padding:12px 0;
+      border:none; border-radius:9px;
+      background:linear-gradient(90deg, #3579f6 0%, #42e3b9 100%);
+      color:#fff; font-size:1.12em; font-weight:bold; cursor:pointer;
+      box-shadow:0 2px 16px rgba(53,121,246,0.09); letter-spacing:1px;
+      transition:background 0.22s, box-shadow 0.18s;
+    }
+    #status { margin-top:16px; min-height:36px;}
+    .footer { margin-top:32px; color:#b1b6cc; font-size:0.97em;}
+    .footer a { color:#41b1f0; font-weight:bold;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>askAI Settings</h2>
+    <form id="optionsForm" autocomplete="off">
+
+      <label for="openaiKey">
+        <a class="apilink" href="https://platform.openai.com/api-keys" target="_blank">OpenAI API Key:</a>
+      </label>
+      <input type="password" id="openaiKey" placeholder="sk-..." autocomplete="new-password">
+
+      <label for="geminiKey">
+        <a class="apilink" href="https://aistudio.google.com/u/1/apikey" target="_blank">Gemini API Key:</a>
+      </label>
+      <input type="password" id="geminiKey" placeholder="AIza..." autocomplete="new-password">
+
+      <label for="mistralKey">
+        <a class="apilink" href="https://console.mistral.ai/api-keys" target="_blank">Mistral API Key:</a>
+      </label>
+      <input type="password" id="mistralKey" placeholder="mistral-..." autocomplete="new-password">
+
+      <label for="cohereKey">
+        <a class="apilink" href="https://dashboard.cohere.com/api-keys" target="_blank">Cohere API Key:</a>
+      </label>
+      <input type="password" id="cohereKey" placeholder="CC-..." autocomplete="new-password">
+
+      <label for="openrouterKey">
+        <a class="apilink" href="https://openrouter.ai/settings/keys" target="_blank">OpenRouter API Key:</a>
+      </label>
+      <input type="password" id="openrouterKey" placeholder="..." autocomplete="new-password">
+
+      <label for="huggingfaceKey">
+        <a class="apilink" href="https://huggingface.co/settings/tokens" target="_blank">Hugging Face API Key:</a>
+      </label>
+      <input type="password" id="huggingfaceKey" placeholder="hf_..." autocomplete="new-password">
+
+      <label for="preferredProvider">Preferred Provider:</label>
+      <select id="preferredProvider">
+        <option value="openai">OpenAI (ChatGPT)</option>
+        <option value="gemini">Gemini (Google)</option>
+        <option value="mistral">Mistral AI</option>
+        <option value="cohere">Cohere</option>
+        <option value="openrouter">OpenRouter</option>
+        <option value="huggingface">Hugging Face</option>
+      </select>
+      <button type="submit">Save Settings</button>
+      <div id="status"></div>
+    </form>
+    <div class="footer">
+      Made with love, by <a href="https://www.linkedin.com/in/ekremozdemir19/" target="_blank">Ekrem O.</a>
+    </div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
