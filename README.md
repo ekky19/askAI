@@ -11,7 +11,6 @@ With a right-click, you can instantly get concise AI-powered explanations from O
 - 🤖 **Choose Your AI:** Supports OpenAI, Gemini, Mistral, Cohere, OpenRouter, and Hugging Face.
 - 🗝️ **Private API Keys:** Your API keys are saved only in your browser (never sent to anyone else).
 - 🗨️ **Conversational Chat:** Ask follow-up questions directly in a mini-chat popup.
-- 🎨 **Modern UI:** Customizable, attractive popup interface.
 - 🖥️ **Works on Most Websites:** (Some restrictions apply for sites like Google Docs — see below.)
 
 ---
